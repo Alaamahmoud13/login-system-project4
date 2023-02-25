@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav-shadow">
+        <div class="container">
+            <nav class="navbar navbar-light justify-content-between">
+                <a class="navbar-brand text-white">SMART LOGIN</a>
+                <button class="btn btn-outline-warning text-white-50 my-2 my-sm-0" onclick="logOut()" type="submit">Logout</button>
+            </nav>
+        </div>
+    </div>
+    <section>
+        <div class="container my-5 text-center h-100 d-flex align-items-center ">
+            <div class="logIn m-auto w-75 p-5" >
+                <h2 class="login-system" id="Welcome">Welcome</h2>
+            </div>
+        </div>
+    </section>
+
+<script>
+    let loginData = JSON.parse(localStorage.getItem('logInData'))
+    if (loginData) {
+            document.getElementById('Welcome').innerHTML = 'Welcome ' + loginData.uName
+        }
+</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

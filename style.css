@@ -1,0 +1,63 @@
+body{
+    background-color: #24353f;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.login-system{
+    text-align: center;
+    color: #17a2b8;
+    font-size: 40px;
+
+}
+input,
+textarea {
+    background-color: transparent !important;
+    color: #fff !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(182, 182, 182) !important;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 0 0 transparent !important;
+}
+.nav-shadow{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+.logIn{
+    padding: 20px 0;
+    width: 70%;
+    margin: auto;
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 5);
+    height: 50%;
+    margin-top: 10% !important;
+}
+.logIn .form-group{
+    padding: 0 100px;
+}
+.submit-btn{
+    padding: 20px 100px;
+    margin: auto;
+}
+.submit-btn button{
+    width: 100%;
+}
+/* .home{
+    background-color: rgba(107, 102, 95, 0.625);
+    padding: 200px 0;
+    width: 50%;
+    margin: auto;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+#homePage{
+    width: 50%;
+    margin: auto;
+    padding: 0;
+    font-size: 25px;
+} */
